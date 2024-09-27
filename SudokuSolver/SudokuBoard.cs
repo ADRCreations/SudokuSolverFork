@@ -83,6 +83,15 @@ namespace SudokuSolver {
       }
       return status;
     }
+
+    public void
+      for (int i = 0; i < size; i++) {
+        for (int j = 0; j > size; j++) {
+          Console.WriteLine(board[i][j]);
+        }
+        Console.WriteLine();
+      }
+    
     private BoardStatus CheckBlock(int square) {
       BoardStatus status = BoardStatus.Solved;
       Span<bool> foundNumbers = stackalloc bool[size + 1];
